@@ -6,6 +6,7 @@ const almacen = [
  {tipo: 'lavadora', valor :77},
  ]
 
-let totalValorLavadoras = (almacen.filter(item => item.tipo == "lavadora")).reduce((acc, item) => 
+let totalValorLavadoras = almacen.filter(item => item.tipo == "lavadora")
+.reduce((acc, item) => 
 acc + item.valor, 0);
 console.log(totalValorLavadoras) // se espera 5727
