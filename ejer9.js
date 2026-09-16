@@ -1,5 +1,5 @@
 const redes = ["Facebook", "Twitter", "Instagram", "TikTok",
 "YouTube"];
 
-let minus= redes.forEach(red => red.toLowerCase()).filter(minus => minus.length>7);
-console.log(minus);
+let minus= redes.map(red => red.toLowerCase()).filter(minus => minus.length>7)
+.forEach(buenos => console.log(buenos));
