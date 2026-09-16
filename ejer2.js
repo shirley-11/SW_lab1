@@ -15,9 +15,9 @@ class Feriante extends Locutor {
     }
 
     dice (texto) {
-        let mayus = texto.toUpperCase();
-        console.log(this.nombre + " " + this.verbo + " '" + texto + "'");
-
+        //let mayus = texto.toUpperCase();
+        //console.log(this.nombre + " " + this.verbo + " '" + mayus + "'");
+        super.dice(texto.toUpperCase());
     }
 }
 
